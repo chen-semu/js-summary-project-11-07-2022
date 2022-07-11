@@ -1,0 +1,132 @@
+body{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "main"
+  "main"
+  "main"
+  "footer"
+}
+.divs_phones {
+  width: 30vw;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 10%;
+  margin:5vh 0vh 5vh 0vh;
+  padding: 10px 0px 10px 0px;
+}
+.header_for_devices_web{
+  grid-area:header !important;
+  display: flex !important;
+  position: sticky ;
+  top: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0) !important;
+}
+.header_for_devices_web2{
+  display: none;
+}
+.menu_for_devices_web{
+  color: white;
+  width: 99vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main_smartship_web {
+  grid-area:main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url("/pics/smartshipBackground.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+}
+#create_new_tab_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(121, 121, 121, 0.461);
+}
+.youtube_videos{
+  width: 49vw;
+  height: 70vh;
+}
+#div_for_youtube{
+  display: flex;
+  flex-wrap: wrap;
+  width: 98vw;
+  justify-content: space-evenly;
+  background-color:rgba(121, 121, 121, 0.461);
+  padding: 1vh 1vh 1vh 1vh;
+  justify-content: space-evenly;
+}
+#HomePage_Part2{
+  text-align: center;
+}
+#SmartShip_pic2{
+  width: 49vw;
+  height: 70vh;
+}
+.footer_for_devices_web{
+  grid-area:footer;
+  display: flex !important;
+  justify-content: space-evenly !important;
+}
+.logoForMyWeb{
+  background-color: rgba(240, 248, 255, 0);
+  margin-left: 1%;
+  margin-top: 1%;
+}
+.logoForMyWeb_sm{
+  background-color: rgba(240, 248, 255, 0);
+  margin-left: 1%;
+  margin-top: 1%;
+  display: none;
+  float: right;
+}
+a{text-decoration: none;
+  color: white;
+}
+table{
+  border: 2px solid black !important;
+}
+td{
+  border: 2px solid black;
+}
+th{
+  border: 2px solid black;
+
+}
+.imgs_for_smartship{
+  width: 50vw;
+}
+.img_for_tabs{
+  width: 80%;
+  height:50%;
+}
+@media only screen and (max-width:650px) {
+  .youtube_videos{
+    width:fit-content;
+  }
+  .divs_phones{
+    width: 80vw;
+  }
+  .main_of_create_object{
+    background-image: none;
+  }
+.main_smartship_web{
+  background-image: url(/pics/bg_for_phone.jpg);
+} 
+.logoForMyWeb{
+  display: none;
+}
+.logoForMyWeb_sm{
+  display:inline;
+}
+#smart_ship_pic2{
+  width: fit-content;
+}
+}
